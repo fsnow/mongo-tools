@@ -1,0 +1,16 @@
+[project]
+name = "ftdc"
+version = "0.1.0"
+description = "CLI tool to download FTDC data from MongoDB Atlas clusters"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "click>=8.3.0",
+    "requests>=2.32.5",
+]
+
+[project.scripts]
+ftdc = "ftdc.cli:main"
+
+[tool.uv]
+package = true
